@@ -74,7 +74,7 @@ clickClose();
 		username = md5(username);
 		password = md5(password);
 		var data = {"userName":username,"password":password};
-		url = "study.163.com/webDev/login.htm";
+		url = "https://study.163.com/webDev/login.htm";
 		get(url,data,login);
 	}
 	// 回调函数login，若成功设置loginSuc和followSuc两个cookie
@@ -83,7 +83,7 @@ clickClose();
 			var date = new Date();
 			date.setDate(date.getDate() + 10);/*10天有效*/
 			oncookie.setCookie("loginSuc","true",date);
-			get("study.163.com/webDev/attention.htm","",function(a){
+			get("https://study.163.com/webDev/attention.htm","",function(a){
 				if (a == 1) {
 					var da = new Date();
 					da.setDate(da.getDate() + 10);/*10天有效*/
@@ -245,7 +245,7 @@ addEvent(proLanguage,"click",function(){
 },false)
 //封装课程对象
 var setCourse = {
-	url: "study.163.com/webDev/couresByCategory.htm",
+	url: "https://study.163.com/webDev/couresByCategory.htm",
 	addElements:function(getdata){
 		//判断产品设计、编程语言哪个是block的
 		function isBlock(){
@@ -389,7 +389,7 @@ selectPage();
 // 热门排行
 window.onload = function(){
 	var hotList = {
-		url: "study.163.com/webDev/hotcouresByCategory.htm",
+		url: "https://study.163.com/webDev/hotcouresByCategory.htm",
 		addElements: function(g_data){
 			var user = JSON.parse(g_data),li,img,a,span;
 			var ulHotList = document.getElementById("h-hotlist");
