@@ -1,0 +1,699 @@
+/*主体set*/
+body{
+	width: 1616px;
+}
+
+/*顶栏*/
+.top{
+	display: block;
+	width: 100%;
+	height: 36px;
+	background-color: #f3f3f3;
+}
+.top p{
+	display: inline-block;
+	line-height: 36px;
+}
+.top .ad{
+	width:408px; 
+	padding:0 8px 0 206px;
+}
+.top .more{
+	width: 57px;
+	margin-right: 668px;
+	color: #21a557; 
+}
+.top .clear span{
+	display: inline-block;
+	width: 16px;
+	height: 10px;
+	background: url(../images/logo.png) -25px -120px no-repeat;
+}
+#cleartop{
+	cursor: pointer;
+}
+
+/*头部header*/
+.header{
+	width: 100%;
+	height: 89px;
+	overflow: hidden;
+}
+.header .left{
+	float: left;
+	width: 500px;
+	height: 89px;
+	margin-left: 206px;
+	font-size: 14px;
+}
+.header .logo{
+	float: left;
+	margin:30px 30px 37px 0;
+	font-size: 22px;
+	font-weight: 500;
+}
+.header .logo::before{
+	content: "";
+	display: inline-block;
+	width: 80px;
+	height: 22px;
+	vertical-align: text-bottom;
+	background: url(../images/logo.png) 0 0 no-repeat;
+}
+.header #f{
+	float: left;
+	overflow: hidden;
+	margin:31px 0 37px;
+}
+#f .fan, #f .num{
+	display: inline-block;
+	height: 21px;
+	line-height: 21px;
+}
+#f-follow{
+	width: 54px;
+	height: 21px;
+	line-height: 21px;
+	border-radius: 1px;
+	background-color: #21a557;
+	color: #fff;
+	text-align: center;
+	cursor: pointer;
+}
+#f-follow:hover{
+	background-color: #2fb556;
+}
+#f .fan{
+	margin-left: 14px;
+	color: #666;
+}
+#f .num{
+	margin-left: 7px;
+	font-size: 10px;
+}
+/*点击关注后的icon样式*/
+#followed{
+	width: 116px;
+	height: 21px;
+	line-height: 21px;
+	border-radius: 1px;
+	border: 1px solid #efefef;
+	background-color: #f8f8f8;
+	cursor: pointer;
+}
+#followed:hover{
+	background-color: #fff;
+}
+#followed span:first-child{
+	display: inline-block;
+	color: #333;
+	text-indent: 22px;
+	background: url(../images/logo.png) -75px -140px no-repeat;
+}
+#followed span:nth-child(2){
+	display: inline-block;
+	color: #ccc;
+}
+#followed span:last-child{
+	display: inline-block;
+	margin-right: 2px;
+	color: #999;
+}
+#followed span:last-child:hover{
+	color: #21a557;
+	text-decoration: underline;
+}
+
+
+/*导航右部*/
+.header .right{
+	float: right;
+	height: 89px;
+	margin-right: 220px;
+}
+.header .right ul{
+	display: inline-block;
+	height: 89px;
+	line-height: 89px;
+	font-size: 16px;
+}
+.header .right li{
+	display: inline-block;
+}
+.header .right a{
+	color: #666;
+}
+.header .right a:hover{
+	color: #39a030;
+}
+.header .right li:first-child{
+	margin-right: 54px;
+}
+.header .right li:nth-child(2){
+	margin-right: 56px;
+}
+.header .right li:nth-child(3){
+	margin-right: 30px;
+}
+.header .right li:last-child{
+	width: 18px;
+	height: 18px;
+	vertical-align: middle;
+	background:url(../images/logo.png) 0 -120px no-repeat;
+}
+.header .right li:last-child:hover{
+	background-position: 0 -148px;
+}
+
+/*banner、三门课程、五张预览图片*/
+.bodyup{
+	position: relative;
+	width: 100%;
+	height: 977px;
+}
+/*banner*/
+#b-banner{
+	position: relative;
+	width: 100%;
+	height: 460px;
+}
+#b-banner li{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 460px;
+	opacity: 0;
+}
+#b-banner li img{
+	display: block;
+	width: 100%;
+	height: 460px;
+}
+#b-banner li.show{
+	opacity: 1;
+}
+/*50ms淡入*/
+#b-banner li.fade-in{
+	animation: fi 500ms linear 0s forwards;
+}
+@keyframes fi{
+	from{opacity:0;}
+	to{opacity:1;}
+}
+/*banner三个小圆图标*/
+#b-num{
+	display: block;
+	position: absolute;
+	left: 48%;
+	top: 430px;
+	width: 63px;
+	height: 10px;
+}
+#b-num li{
+	float: left;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	margin-right: 11px;
+	background-color:#fff;
+	cursor: pointer;
+}
+#b-num li.active{
+	background-color: #333;
+}
+
+/*三门课程*/
+.bodyup .intro{
+	width: 100%;
+	height: 297px;
+}
+.bodyup .intro .product{
+	display: inline-block;
+	height: 297px;
+}
+.bodyup .intro .product1{
+	margin: 0 84px 0 210px;
+}
+.bodyup .intro .product2{
+	margin-right: 84px;
+}
+.bodyup .intro .icon{
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	margin:70px 20px 147px 0;
+	background:url(../images/logo.png) no-repeat;
+}
+.bodyup .product1 .icon{
+	background-position: 0 -30px; 
+}
+.bodyup .product2 .icon{
+	background-position: -90px -30px;
+}
+.bodyup .product3 .icon{
+	background-position: -180px -30px;
+}
+/*三门课程-内容部分*/
+.bodyup .product .content{
+	display: inline-block;
+	width: 240px;
+	vertical-align: top;
+}
+.intro .content h1{
+	font-size: 21px;
+	color: #333;
+	line-height: 1;
+	margin-top: 61px;
+	margin-bottom: 15px;
+}
+.intro .content .txt{
+	font-size: 14px;
+	line-height: 24px;
+	margin-bottom: 30px;
+	color: #666;
+}
+.intro .content .more{
+	font-size: 14px;
+	line-height: 1;
+	margin-bottom: 60px;
+	color: #39a030;
+}
+.intro .content .more:hover{
+	text-decoration: underline;
+}
+/*五张预览图片*/
+.bodyup .pic{
+	width: 100%;
+	height: 220px;
+}
+
+/*课程列表、机构介绍、最热排行*/
+.bodydown{
+	width: 100%;
+	height: 1551px;
+	background-color: #f8f8f8;
+}
+.bodydown .wrap{
+	width: 1203px;
+	height: 1551px;
+	margin:0 auto;
+}
+/*课程列表*/
+.bodydown .main{
+	float: left;
+	width: 980px;
+	height:1470px;
+	padding-top: 81px;
+}
+.bodydown .main .title li{
+	display: inline-block;
+	width: 200px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 20px;
+	color: #666;
+	background-color: #fff;
+	box-shadow: 1px 1px 1px #d4d3d3;
+	cursor: pointer;
+}
+.bodydown .main .title li.active{
+	color: #fff;
+	background-color: #39a030;
+}
+.bodydown .course{
+	position: relative;
+	width: 100%;
+	height: 1220px;
+	margin-top: 30px;
+}
+.bodydown .course ul{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 1220px;
+}
+.bodydown .course ul.active{
+	display: block;
+}
+/*JS动态插入课程列表*/
+#two-courses li{
+	float: left;
+	width: 223px;
+	margin-right: 22px;
+	margin-bottom: 20px;
+	background-color: #fff;
+}
+#two-courses li:hover{
+	box-shadow: 1px 1px 1px #d4d3d3;
+}
+#two-courses div.txt{
+	margin-left: 6px;
+}
+#two-courses img{
+	width: 223px;
+	height: 124px;
+}
+#two-courses h3{
+	line-height: 32px;
+	color: #333;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+#two-courses h3:hover{
+	color: #39a030;
+	cursor: pointer;
+}
+#two-courses .provider{
+	color: #999;
+}
+#two-courses .learners{
+	display: inline-block;
+	width: 45px;
+	height: 16px;
+	line-height: 16px;
+	border: 1px solid #ddd;
+	border-radius: 1px;
+	margin: 10px 0 10px;
+	font-size: 8px;
+	color: #999;
+	text-indent: 15px;
+	background: url(../images/logo.png) -23px -138px no-repeat;
+}
+#two-courses .price{
+	margin-bottom: 10px;
+	color: #ff3f00;
+}
+
+/*分页*/
+.bodydown .main .page-outer{
+	width: 960px;
+}
+.bodydown .main .page-inner{
+	float: right;
+	margin-top: 30px;
+}
+.bodydown .page-inner li{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin-left: 8px;
+	line-height: 20px;
+	text-align: center;
+	color: #737373;
+	font-size: 14px;
+	cursor: pointer;
+}
+.bodydown .page-inner li.checked{
+	color: #39a030;
+}
+.bodydown .page-inner li:hover{
+	background-color: #9dd8b1;
+	color: #fff;
+}
+.bodydown .page-inner li:first-child,.bodydown .page-inner li:last-child{
+	width: 32px;
+	background-color: #9dd8b1;
+	color: #fff;
+}
+.bodydown .page-inner li:first-child{
+	margin-left: 0;
+}
+
+/*右边侧栏--机构介绍、最热排行*/
+.bodydown .sider{
+	float: left;
+	width: 223px;
+	height: 1470px;
+	padding-top: 81px;
+}
+.bodydown .sider .institute{
+	margin-bottom: 22px;
+}
+.bodydown .sider .title{
+	width: 223px;
+	height: 55px;
+	line-height: 55px;
+	font-size: 16px;
+	font-weight: 500;
+	color: #333;
+	text-indent: 20px;
+	box-shadow: 0 0 1px #ddd;
+	background-color: #fff;
+}
+.bodydown .video{
+	padding: 20px 22px 22px;
+	background-color: #fff;
+	box-shadow: 0 0 1px #ddd;
+}
+.bodydown .video p{
+	padding-bottom: 9px;
+	font-size: 14px;
+	color: #666;
+}
+.bodydown .video img{
+	width: 180px;
+	height: 110px;
+	cursor: pointer;
+}
+.bodydown .wrap-list{
+	position: relative;
+	width: 223px;
+	height: 720px;
+	box-shadow: 0 0 1px #ddd;
+	background-color: #fff;
+	overflow: hidden;
+}
+/* JS动态插入的热门课程列表 */
+#h-hotlist{
+	position: absolute;
+	padding: 20px 20px 0 20px;
+}
+#h-hotlist li{
+	width: 183px;
+	height: 50px;
+	margin-bottom: 20px;
+}
+#h-hotlist img{
+	float: left;
+	width: 50px;
+	height: 50px;
+	margin-right: 13px;
+}
+#h-hotlist a{
+	display: inline-block;
+	width: 120px;
+	margin-bottom: 12px;
+	font-size:14px;
+	color: #333;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+#h-hotlist span{
+	display: inline-block;
+	font-size: 12px;
+	color: #999;
+	text-indent: 15px;
+	background: url(../images/logo.png) -25px -140px no-repeat;
+}
+
+/*页面底部*/
+.footer{
+	width: 100%;
+	height: 262px;
+	background-color: #2c3339;
+	color:#bebfc0;
+	font-size: 14px;
+}
+.footer .left{
+	float: left;
+	width: 410px;
+	margin: 0 148px 0 256px;
+	padding-top: 92px;
+}
+.footer .right{
+	float: left;
+	width: 420px;
+	padding-top: 82px;
+}
+.footer .logo{
+	display: inline-block;
+	margin-bottom: 22px;
+	font-size: 22px;
+	font-weight: 500;
+	color:#39a030;
+}
+.footer .logo::before{
+	content: "";
+	display: inline-block;
+	width: 80px;
+	height: 22px;
+	vertical-align: text-bottom;
+	background: url(../images/logo.png) 0 0 no-repeat;
+}
+.footer .left p{
+	font-size: 14px;
+	line-height: 24px;
+}
+.footer .right .other{
+	float: left;
+}
+.footer .right h3{
+	display: inline-block;
+	margin-bottom: 7px;
+}
+.footer .right li{
+	font-size: 16px;
+	line-height: 30px;
+	color: #bebfc0;
+}
+.footer .right li:hover{
+	text-decoration: underline;
+}
+.footer .right .link{
+	margin-right: 98px;
+}
+.footer .right .us{
+	margin-right: 72px;
+}
+#care{
+	display: inline-block;
+}
+#care::after{
+	content: "";
+	display: inline-block;
+	width: 30px;
+	height: 16px;
+	background: url(../images/logo.png) -55px -120px no-repeat;
+}
+
+/*视频弹窗*/
+.v-mask{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(50,50,50,0.7);
+}
+.v-mask .v-wrap{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	/*width: 949;*/
+	/*height: 675;*/
+	padding: 0 30px;
+	background-color: #fff;
+}
+#v-close{
+	position: absolute;
+	top: 13px;
+	right: 12px;
+	width: 10px;
+	height: 10px;
+	background: url(../images/logo.png) -25px -120px no-repeat;
+	cursor: pointer;
+}
+.v-mask .v-wrap h3{
+	position: relative;
+	top: 20px;
+	font-size: 14px;
+	color: #444;
+}
+
+/*登陆弹窗*/
+.login-mask{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(50,50,50,0.7);
+}
+#l-form{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+	width: 388px;
+	height: 288px;
+	padding-left: 40px;
+	padding-top: 30px;
+	background-color: #fff;
+}
+#l-close{
+	position: absolute;
+	top: 13px;
+	right: 12px;
+	width: 10px;
+	height: 10px;
+	background: url(../images/logo.png) -25px -120px no-repeat;
+	cursor: pointer;
+}
+#form h2{
+	margin-bottom: 20px;
+	font-size: 18px;
+	color: #444;
+}
+#username, #password{
+	box-sizing: border-box;
+	width: 296px;
+	height: 46px;
+	line-height: 46px;
+	padding-left: 12px;
+	font-size: 16px;
+	color: #999;
+	border: 1px solid #dfdfdf;
+	box-shadow: inset 1px 1px 2px #f1f1f1;
+}
+#username{
+	margin-bottom: 15px;
+}
+#l-btn{
+	width: 295px;
+	height: 48px;
+	margin-top: 30px;
+	font-size: 16px;
+	color: #fff;
+	background: url(../images/logo.png) 0 -170px no-repeat;
+	cursor: pointer;
+}
+
+/*响应式 窗口宽度<1205 时，使用小屏视觉布局*/
+@media screen and (max-width: 1204px){
+	body{
+		width: 1371px;
+	}
+	.bodyup .product .content{
+		width: 170px;
+	}
+	.bodydown .wrap{
+	width: 958px;
+	}
+	.bodydown .main{
+		width: 735px;
+	}
+	.top .more{
+	margin-right: 423px;
+	}
+	.bodyup .pic{
+		white-space: nowrap;
+		overflow: hidden;
+		text-indent: -122px;
+	}
+	.bodydown .main .page-outer{
+	width: 715px;
+	}
+	#two-courses{
+		overflow: hidden;
+	}
+}
